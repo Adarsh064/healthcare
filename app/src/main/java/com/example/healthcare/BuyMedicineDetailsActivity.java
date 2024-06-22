@@ -30,10 +30,10 @@ public class BuyMedicineDetailsActivity extends AppCompatActivity {
         tvPackagesName=findViewById(R.id.textViewBMDPackageName);
         tvTotalCost=findViewById(R.id.textViewBMDTotalCost);
         edDetails=findViewById(R.id.editTextBMDMultilines);
-        edDetails.setKeyListener(null);
         btnBack=findViewById(R.id.buttonBMDBack);
         btnGoTCart=findViewById(R.id.buttonBMDAddToCart);
 
+        edDetails.setKeyListener(null);
         Intent intent=getIntent();
         tvPackagesName.setText(intent.getStringExtra("text1"));
         edDetails.setText(intent.getStringExtra("text2"));

@@ -106,7 +106,7 @@ public class DoctorDetailsActivity extends AppCompatActivity {
             item.put("line2",doctor_details[i][1]);
             item.put("line3",doctor_details[i][2]);
             item.put("line4",doctor_details[i][3]);
-            item.put("line5","Cons Fees:"+doctor_details[i][4]+"/-");
+            item.put("line5","Cons Fees:"+doctor_details[i][3]+"/-");
             list.add(item);
         }
         sa=new SimpleAdapter(this,list,R.layout.multi_lines,new String[]{"line1","line2","line3","line4","line5"},

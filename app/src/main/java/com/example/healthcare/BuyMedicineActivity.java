@@ -20,15 +20,15 @@ import java.util.HashMap;
 public class BuyMedicineActivity extends AppCompatActivity {
     private String[][] packages=
             {
-                    {"Uprise-03 100IU Capsule","","","","50"},
-                    {"HealthVit Chromium Picolinate 200mg Capsule","","","","305"},
+                    {"Uprise-03 100IU Capsule","","","50"},
+                    {"HealthVit Chromium Picolinate 200mg Capsule","","","305"},
                     {"Vitamin B Complex Capsule","","","448"},
-                    {"Inlife Vitamin E Wheat Germ Oil Capsule","","","","40"},
-                    {"Dolo 650 Tablet","","","","30"},
-                    {"Crocin 650 Advance Tablet","","","","50"},
-                    {"Strepsils Medicated Lozenges for Sore Throat","","","","40"},
-                    {"Tata 1mg Calcium + Vitamin D3","","","","30"},
-                    {"Feronia -XT Tablet","","","","130"}
+                    {"Inlife Vitamin E Wheat Germ Oil Capsule","","","40"},
+                    {"Dolo 650 Tablet","","","30"},
+                    {"Crocin 650 Advance Tablet","","","50"},
+                    {"Strepsils Medicated Lozenges for Sore Throat","","","40"},
+                    {"Tata 1mg Calcium + Vitamin D3","","","30"},
+                    {"Feronia -XT Tablet","","","130"}
             };
     private String[] package_details={
             "Building and keeping the bones & teeth Strong\n"+
@@ -88,7 +88,7 @@ public class BuyMedicineActivity extends AppCompatActivity {
             item.put("line2",packages[i][1]);
             item.put("line3",packages[i][2]);
             item.put("line4",packages[i][3]);
-            item.put("line5","Cons Fees:"+packages[i][4]+"/-");
+            item.put("line5","Cons Fees:"+packages[i][3]+"/-");
             list.add(item);
         }
 
@@ -102,7 +102,7 @@ public class BuyMedicineActivity extends AppCompatActivity {
                 Intent it=new Intent(BuyMedicineActivity.this, BuyMedicineDetailsActivity.class);
                 it.putExtra("text1",packages[i][0]);
                 it.putExtra("text2",package_details[i]);
-                it.putExtra("text1",packages[i][4]);
+                it.putExtra("text1",packages[i][3]);
                 startActivity(it);
             }
         });

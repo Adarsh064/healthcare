@@ -72,7 +72,7 @@ public class LabTestActivity extends AppCompatActivity {
             item.put("line2",packages[i][1]);
             item.put("line3",packages[i][2]);
             item.put("line4",packages[i][3]);
-            item.put("line5","Total Cost"+packages[i][4]+"/-");
+            item.put("line5","Total Cost"+packages[i][3]+"/-");
             list.add(item);
         }
         sa=new SimpleAdapter(this,list,
@@ -87,7 +87,7 @@ public class LabTestActivity extends AppCompatActivity {
                 Intent it=new Intent(LabTestActivity.this, LabTestDetailsActivity.class);
                 it.putExtra("text1",packages[i][0]);
                 it.putExtra("text2",package_details[i]);
-                it.putExtra("text3",packages[i][4]);
+                it.putExtra("text3",packages[i][3]);
                 startActivity(it);
             }
         });
